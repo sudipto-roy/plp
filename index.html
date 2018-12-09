@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Filter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <aside>
+    <div class="content">
+      <h1>Filters</h1>
+      <div>
+        <h2>Price</h2>
+        <select name="priceStartFilter" id="priceStartFilter">
+          <option value="min">Min</option>
+          <option value="500">₹500</option>
+          <option value="1000">₹1000</option>
+          <option value="1500">₹1500</option>
+          <option value="2000">₹2000</option>
+          <option value="2500">₹2500</option>
+          <option value="3000">₹3000</option>
+          <option value="3500">₹3500</option>
+          <option value="4000">₹4000</option>
+          <option value="4000+">₹4000+</option>
+        </select>
+        <span>to</span>
+        <select name="priceEndFilter" id="priceEndFilter">
+          <option value="500">₹500</option>
+          <option value="1000">₹1000</option>
+          <option value="1500">₹1500</option>
+          <option value="2000">₹2000</option>
+          <option value="2500">₹2500</option>
+          <option value="3000">₹3000</option>
+          <option value="3500">₹3500</option>
+          <option value="4000">₹4000</option>
+          <option value="4000+">₹4000+</option>
+        </select>
+      </div>
+      <div>
+        <h2>Brand</h2>
+        <input type="text" name="brandFilter" id="brandFilter">
+      </div>
+      <div>
+        <h2>Color</h2>
+        <div>
+          <input type="checkbox" name="beigeFilter" id="beigeFilter" data-color="beige">
+          <label class="beigeFilter" for="beigeFilter">
+            Beige
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" name="blackFilter" id="blackFilter" data-color="black">
+          <label class="blackFilter" for="blackFilter">
+            Black
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" name="blueFilter" id="blueFilter" data-color="blue">
+          <label class="blueFilter" for="blueFilter">
+            Blue
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" name="brownFilter" id="brownFilter" data-color="brown">
+          <label class="brownFilter" for="brownFilter">
+            Brown
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" name="bronzeFilter" id="bronzeFilter" data-color="bronze">
+          <label class="bronzeFilter" for="bronzeFilter">
+            Bronze
+          </label>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main>
+    <div class="content">
+      <div id="productContainer">
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="./js/App.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript">
+  app.index.init();
+  </script>
+</body>
+
+</html>
